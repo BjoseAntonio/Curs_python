@@ -12,7 +12,7 @@ print(False and False)
 a =15
 print(a > 13 and  a < 20)
 
-#Operador logico en una cadena con AND
+#Operador lógico en una cadena con AND
 c = "Hola mundo"
 print(len(c) >= 5 and c[0] == "H" )
 
