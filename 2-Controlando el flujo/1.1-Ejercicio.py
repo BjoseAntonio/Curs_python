@@ -6,15 +6,16 @@
 
 #Si cadena_1 tiene la misma longitud que cadena_2 la variable resultado deberá tener el valor entero 0.
 
-cadena_1 = "Hola"
+cadena_1 = "Hol"
 cadena_2 = "Hola"
 resultado = 0
 
 if  len(cadena_1) > len(cadena_2):
-    resultado += 1
+    resultado = 1
     print(resultado)
 elif len(cadena_1) < len(cadena_2):
-    resultado += 2
-    print(resultado)
+    resultado = 2
 else:
-    print(resultado)
+    resultado = 0
+
+print(resultado)
