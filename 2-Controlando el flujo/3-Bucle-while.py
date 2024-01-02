@@ -12,9 +12,52 @@ q = 0
 while q <= 4:
     q+= 1
     if q <= 2:
-        print("Q vale 2, rompemos el bucle con un break")
+        print("Q vale "+str(q)+", rompemos el bucle con un break")
         break
     print("Q vale: ",q)
 else: 
     print("Se ha completado toda la iteracion y q vale: ",q)
 
+
+valor = 0 
+while valor <= 7:
+    valor+= 1
+    if valor == 3:
+        print("Continua a pesaar de que 3 sea igual a valor")
+        continue
+    print("Valor vale ",valor)
+else:
+    print("Se ha completado toda la iteracion y valor vale" ,valor)
+
+print("______________________________________")
+
+print("Bienvenidos a Practica Operaciones")
+while(True):
+    print("""Seleccion la opcion que desea realizar
+          1)Multiplicación
+          2)Suma
+          3)Resta
+          4)División
+          5)Salir""")
+    opcion = input("Opcion: ")
+    if opcion == "1":
+        numeroX = float(input("Introduce el primer numero: "))
+        numeroY = float(input("Introduce el segundo numero: "))
+        print("La multiplicación de "+str(numeroX)+" X "+str(numeroY)+" es: "+str(numeroX*numeroY))
+    elif opcion == "2":
+         numeroX = float(input("Introduce el primer numero: "))
+         numeroY = float(input("Introduce el segundo numero: "))
+         print("La suma de "+str(numeroX)+" + "+str(numeroY)+" es: "+str(numeroX+numeroY))
+    elif opcion == "3":
+         numeroX = float(input("Introduce el primer numero: "))
+         numeroY = float(input("Introduce el segundo numero: "))
+         print("La resta de "+str(numeroX)+" - "+str(numeroY)+" es: "+str(numeroX-numeroY))
+    elif opcion == "4":
+         numeroX = float(input("Introduce el primer numero: "))
+         numeroY = float(input("Introduce el segundo numero: "))
+         print("La división de "+str(numeroX)+" / "+str(numeroY)+" es: "+str(numeroX/numeroY))
+    elif opcion == "5":
+        print("Saliendo...")
+        break
+    else:
+        print("Opción no valido, vuelva a intentarlo")
