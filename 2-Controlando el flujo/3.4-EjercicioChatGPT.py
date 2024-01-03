@@ -46,24 +46,36 @@
 
 
 
-print("____________Ejercicio 3___________________")
-# Ejercicio 3: Factorial
-# Escribe un programa que calcule el factorial de un número dado.
-# Pista: Utiliza una variable para el resultado y otra para el contador, y actualiza ambas en cada iteración del bucle.
-numero_asignado = int(input("Asigne el número para calcular su Factorial: "))
-contador = 1
-resultado = 1
+# print("____________Ejercicio 3___________________")
+# # Ejercicio 3: Factorial
+# # Escribe un programa que calcule el factorial de un número dado.
+# # Pista: Utiliza una variable para el resultado y otra para el contador, y actualiza ambas en cada iteración del bucle.
+# numero_asignado = int(input("Asigne el número para calcular su Factorial: "))
+# contador = 1
+# resultado = 1
 
-while contador <= numero_asignado:
-    resultado *=contador
-    contador +=1 
-print("El factoria de "+str(numero_asignado)+" es: "+str(resultado))
+# while contador <= numero_asignado:
+#     resultado *=contador
+#     contador +=1 
+# print("El factoria de "+str(numero_asignado)+" es: "+str(resultado))
 
 
 print("____________Ejercicio 4___________________")
 # Ejercicio 4: Serie Fibonacci
 # Genera los primeros N términos de la serie Fibonacci.
 # Pista: Utiliza tres variables para representar los términos anteriores y actuales en la serie y actualízalas en cada iteración del bucle
+ter_anterior = 1
+ter_actual = 1
+ter_siguiente = 0
+n_numero = int(input("Ingrese el numero de la serie Fibinacci: "))
+
+while ter_siguiente <= n_numero:
+    ter_siguiente =  ter_actual + ter_anterior
+    print(str(ter_anterior)+" + "+str(ter_actual)+" = "+str(ter_siguiente))
+    ter_anterior = ter_actual
+    ter_actual = ter_siguiente 
+
+
 
 
 
