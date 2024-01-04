@@ -64,22 +64,22 @@ print("____________Ejercicio 4___________________")
 # Ejercicio 4: Serie Fibonacci
 # Genera los primeros N términos de la serie Fibonacci.
 # Pista: Utiliza tres variables para representar los términos anteriores y actuales en la serie y actualízalas en cada iteración del bucle
-ter_anterior = 1
-ter_actual = 1
-ter_siguiente = 0
-n_numero = int(input("Ingrese el numero de la serie Fibinacci: "))
+numero_anterior = 0
+numero_actual = 1
+serie = [numero_anterior, numero_actual]
 
-while ter_siguiente <= n_numero:
-    ter_siguiente =  ter_actual + ter_anterior
-    print(str(ter_anterior)+" + "+str(ter_actual)+" = "+str(ter_siguiente))
-    ter_anterior = ter_actual
-    ter_actual = ter_siguiente 
+cantidad_numeros = int(input('Ingrese la cantidad de series de Fibonacci: '))
 
+while  len(serie) < cantidad_numeros:
+    res_siguiente =  numero_actual + numero_anterior
+    serie.append(res_siguiente)
+    numero_anterior = numero_actual
+    numero_actual = res_siguiente
 
-
+print('Serie Fibonacci de ',cantidad_numeros, 'terminos :',serie)
 
 
 print("____________Ejercicio 5___________________")
 # Ejercicio 5: Suma de Dígitos
 # Escribe un programa que sume los dígitos de un número entero.
-# Pista: Utiliza operaciones de división y módulo para obtener los dígitos individuales y acumula la suma en una variable
+# Pista: Utiliza operaciones de división y módulo para obtener los dígitos individuales y acumula la suma en una variables
