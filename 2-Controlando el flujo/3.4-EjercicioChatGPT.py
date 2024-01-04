@@ -64,8 +64,17 @@ print("____________Ejercicio 4___________________")
 # Ejercicio 4: Serie Fibonacci
 # Genera los primeros N términos de la serie Fibonacci.
 # Pista: Utiliza tres variables para representar los términos anteriores y actuales en la serie y actualízalas en cada iteración del bucle
+ter_anterior = 1 
+ter_actual = 1
+ter_siguiente = 0
 
+numero_serie_Fibonacci = int(input("Escribe el numero para crear la serie de Fibonacci: "))
 
+while ter_actual <= numero_serie_Fibonacci:
+    ter_siguiente = ter_actual + ter_anterior
+    ter_actual = ter_anterior
+    ter_siguiente = ter_actual
+    print(str(ter_anterior)+" + "+str(ter_actual)+" = "+str(ter_siguiente))
 
 print("____________Ejercicio 5___________________")
 # Ejercicio 5: Suma de Dígitos
