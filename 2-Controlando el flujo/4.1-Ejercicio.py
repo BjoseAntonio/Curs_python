@@ -7,7 +7,25 @@
 # Recuerda, únicamente debes sumar los números NO múltiples de 5 y 7 al sumatorio.
 
 
-numero = float(input('Ingrese un numero: '))
+# multiplo = float(input('Ingrese un numero: '))
+numero = 6
+almacen_rango = 0
+
+
+# if multiplo % numero == 0:
+#     print("si es multiplo")
+# else:
+#     print("no es multiplo")
+
+for i in range(numero+1):
+    if i % 5 != 0 and i % 7 != 0:
+        almacen_rango += i
+        
+print(almacen_rango)
+
+    
+
+
 
 
 #numero % multiplo == 0S
