@@ -58,10 +58,10 @@ while(True):
     #     contador_caracteres -= 1
     # print(f"la cantidad de vocales en la palabra '{palabra}' son de {contador_volcales} con una cantidad de caracteres de {contador_caracteres}")
 
-  # 5-  Secuencia Fibonacci:
-  # Problema: Escribe un programa que genere los primeros n términos de la secuencia Fibonacci, donde n es ingresado por el usuario.
-  # Pista: Utiliza un bucle for y dos variables para almacenar los términos previos.
-
+   # 5-  Secuencia Fibonacci:
+   # Problema: Escribe un programa que genere los primeros n términos de la secuencia Fibonacci, donde n es ingresado por el usuario.
+   # Pista: Utiliza un bucle for y dos variables para almacenar los términos previos.
+    
 
 
 
