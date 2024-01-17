@@ -31,3 +31,25 @@ for fila in tabla:
     for columna in fila:
         print(columna, end=" ")
     print()
+
+cubo = [
+    tabla, tabla, tabla
+]
+
+print(cubo[0][0][0])
+print(cubo[2][1][2])
+
+for tabla in cubo:
+    for fila in tabla:
+        for columnaa in fila:
+            print(columnaa, end=' ')
+        print()
+    print()
+
+
+for k, tabla in enumerate(cubo):
+    for i, fila in enumerate(tabla):
+        for j, columna in enumerate(fila):
+            print(cubo[k][i][j], end=' ')
+        print()
+    print()
