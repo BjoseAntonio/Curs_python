@@ -25,7 +25,7 @@ matriz1 = [
 ]
 matriz2 = [
     [9,8,7],
-    [6,5,4],
+    [6,6,4],
     [3,2,1]
 ]
 
@@ -35,3 +35,34 @@ resultado = [
     [0,0,0]
 ]
 
+for i in range(len(matriz1)):
+    for j in range(len(matriz1[0])):
+        resultado[i][j] = matriz1[i][j] + matriz2[i][j]
+print(resultado)
+
+
+
+# Ejercicio 4: Pirámide invertida
+# Imprime una pirámide invertida de números.
+piramide = 5
+
+for q in range(piramide, 0, -1):
+    for w in range(piramide - q):
+        print(" ", end=' ')
+    for k in range(2 * q - 1):
+        print(i, end=' ')
+    print()
+
+# Ejercicio 5: Tablero de ajedrez
+# Imprime un tablero de ajedrez utilizando caracteres 'X' y 'O'.
+
+tabla = 8
+indice1 = 8
+
+for indice in range(tabla):
+    for columna in range(indice1):
+        if (indice + columna) % 2 == 0:
+            print("x", end=" ")
+        else: 
+            print("O", end=" ")
+    print()
