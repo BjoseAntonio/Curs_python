@@ -66,3 +66,4 @@ for indice in range(tabla):
         else: 
             print("O", end=" ")
     print()
+    
