@@ -1,0 +1,6 @@
+Colecciones
+
+Exiten tres tipos de colecciones 
+Tuplas -No se puede modificar sus valores 
+Conjuntos
+Diccionarios
