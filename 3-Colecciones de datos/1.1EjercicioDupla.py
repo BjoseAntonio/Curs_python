@@ -11,11 +11,11 @@
 # El elemento que hay en la posición con índice 4 de la tupla.
 
 # El número de veces que aparece el número 4 en la tupla.
-dupla = (2,4,5,6,123,'hola')
+dupla = (2,4,5,6,123,'hola',4)
 
-print()
-print()
-print()
-print()
-print()
-print()
+print(dupla[-1])
+print(len(dupla))
+# print()
+print(dupla[0:3])
+print(dupla[4])
+print(dupla.count(4))
